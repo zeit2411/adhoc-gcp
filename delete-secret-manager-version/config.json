@@ -1,0 +1,8 @@
+[
+  {
+    "project-id": "CKA-test",
+    "secret-folders": [
+      "test-secret"
+    ]
+  }
+]
