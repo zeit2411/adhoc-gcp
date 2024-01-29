@@ -1,7 +1,8 @@
 ARG PYTHON_VERSION=3.9-slim-buster
 FROM python:${PYTHON_VERSION} as python
 
-WORKDIR /app
+ARG APP_HOME=/app
+WORKDIR ${APP_HOME}
 
 ADD requirements.txt ./requirements.txt
 RUN pip install --upgrade pip
