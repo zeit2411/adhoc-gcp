@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 
+           'us-east1-docker.pkg.dev/${PROJECT_ID}/adhoc-gcp/delete-secret-manager-version:latest', 
+           '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 
+           'us-east1-docker.pkg.dev/${PROJECT_ID}/adhoc-gcp/delete-secret-manager-version:latest']
