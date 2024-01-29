@@ -64,4 +64,5 @@ def delete_old_versions(secret_folders, project_id):
             print(f"Error destroying versions for secret {secret_name}: {e}")
 
 if __name__ == "__main__":
+    print("Hello, world!")
     main()
